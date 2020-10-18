@@ -3,7 +3,7 @@
 
 # Dual Universe Juvenius Floating Clock
 
-This clock does not uses screens or signs to display time but a method of floating number stickers that change over time.
+This LUA Code ingame clock does not uses screens or signs to display time but a method of floating number stickers that change over time. With the Aid of a programing board you can put the clock on any construct.
 
 ## How it works
 
