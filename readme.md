@@ -9,6 +9,7 @@ The clock activates when the Programing Board is activated, you can use a switch
 ## Instalation
 
 **Elements needed**
+
 Basic:
 
 - Core Unit (any size or model)
@@ -19,6 +20,7 @@ Optional:
 - Switch - optional
 
 **Build**
+
 Basic:
 
 - Place the core unitm if you dont have one available
