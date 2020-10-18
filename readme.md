@@ -1,4 +1,7 @@
-# Dual Universe Floating Clock
+
+![Juvenius Floating Clock](figure0.gif "Juvenius Floating Clock")
+
+# Dual Universe Juvenius Floating Clock
 
 This clock does not uses screens or signs to display time but a method of floating number stickers that change over time.
 
