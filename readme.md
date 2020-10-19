@@ -7,7 +7,7 @@ This LUA Code ingame clock does not uses screens or signs to display time but a 
 
 ## How it works
 
-The clock activates when the Programing Board is activated, you can use a switch to turn it on and off or any element that can turn on and off the PB. The clock will apear floating and with the LUA Parameters you can change the orientation of the digits. Just switch it on and off, nothing more to do.
+The clock activates when the Programing Board is activated, you can use a switch to turn it on and off or any element that can turn on and off the PB. The clock will apear floating and with the LUA Parameters you can change the orientation of the digits and do hour offsets for timezone needs. Just switch it on and off, nothing more to do.
 
 ## Instalation
 
