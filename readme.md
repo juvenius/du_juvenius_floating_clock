@@ -57,6 +57,10 @@ switch -->Programing Board--> Core Unit
 
 ![Parameters](figure3.png "Parameters")
 
+## Known Issues
+- Persistance of Digits after turning off. If more than one porgraming board is linked to the CORE this fenomenon apears, my interpretation of this is that the variables of the program that involve the methods used are stored in the core not on the unit. To fix this use a xs core for the clock, or just have one link to your core from a PB.
+
+
 ## Planded Upgrades
 
 - Stop Watch, Timer, Alarm functions
