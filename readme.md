@@ -65,3 +65,4 @@ switch -->Programing Board--> Core Unit
 
 - Stop Watch, Timer, Alarm functions
 - Rotate the digits on any direction
+- Local sunrise, sunset timer
