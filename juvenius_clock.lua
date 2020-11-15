@@ -1,36 +1,29 @@
-----------------------------------------------------------------------------------------------------------------
--- INSERT IN LUA CODE >>> SLOT: Unit | filter:tick(clock)
-----------------------------------------------------------------------------------------------------------------
-
-update_clock(system.getTime())
-
-----------------------------------------------------------------------------------------------------------------
--- INSERT IN LUA CODE >>> SLOT: Unit | filter:Start()
-----------------------------------------------------------------------------------------------------------------
+-- SLOT: system | filter:Start()
 
 --initial vars
 unit.setTimer("clock",1)
 second_digit = 0
 
 --inicial value of the arrow test
-x = 0
-digit_6 = 0
-digit_5 = 0
-digit_4 = 0
-digit_3 = 0
-digit_2 = 0
-digit_1 = 0
-old_digit_6 = -1
-old_digit_5 = -1
-old_digit_4 = -1
-old_digit_3 = -1
-old_digit_2 = -1
-old_digit_1 = -1
+local x = 0
+local digit_6 = 0
+local digit_5 = 0
+local digit_4 = 0
+local digit_3 = 0
+local digit_2 = 0
+local digit_1 = 0
+local old_digit_6 = -1
+local old_digit_5 = -1
+local old_digit_4 = -1
+local old_digit_3 = -1
+local old_digit_2 = -1
+local old_digit_1 = -1
 
-digit_x = 0.10 --export
-digit_y = 10 --export
-digit_z = -30 --export
-orientation = "front"  --export
+local digit_x = .20 --export
+local digit_y = -1.40 --export
+local digit_z = .20 --export
+local orientation = "front"  --export (front, side)
+local hour_offset = 0 --export
 
 if orientation == "side" then
   tougle_side = 1 
@@ -39,7 +32,6 @@ else
  tougle_side = 0 
  tougle_front = 1
 end
-
 id_digit_6 = core.spawnNumberSticker(digit_6,digit_y, digit_x , digit_z,orientation)
 id_digit_5 = core.spawnNumberSticker(digit_5,digit_y + (0.5 * tougle_front) , digit_x + (0.5 * tougle_side) ,digit_z,orientation)
 id_digit_4 = core.spawnNumberSticker(digit_4,digit_y + (1.25* tougle_front), digit_x + (1.25* tougle_side) ,digit_z,orientation)
@@ -49,6 +41,8 @@ id_digit_1 = core.spawnNumberSticker(digit_1,digit_y + (3  * tougle_front), digi
 
 
 function update_clock(n)
+  
+  n = n - hour_offset * 3600  
   
   -- n to d,h,m,s  
   local day = math.floor(n / (24*3600))
@@ -111,9 +105,11 @@ function update_clock(n)
 
 end
 
-----------------------------------------------------------------------------------------------------------------
+
 
 
    
+
+
 
 
