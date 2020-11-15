@@ -1,4 +1,21 @@
--- SLOT: system | filter:Start()
+-- Juvenius' floating clock 1.01
+-- https://github.com/juvenius/du_juvenius_floating_clock
+--
+-- instalation:
+-- Only to places 2 needed to copy/paste code. Please take care on the on the specified slot/filter , 
+--   1) unit / tick(clock)
+--   2) unit / filter: start()
+-- copy from start to end on each case.
+----------------------------------------------------------------------------------------
+
+--start---------------------------------------------------------------------------------
+--slot: unit / tick(clock)
+
+update_clock(system.getTime())
+--end-----------------------------------------------------------------------------------
+
+--start---------------------------------------------------------------------------------
+--slot: unit / filter: start()
 
 --initial vars
 unit.setTimer("clock",1)
@@ -104,12 +121,5 @@ function update_clock(n)
   id_digit_1 = core.spawnNumberSticker(digit_1,digit_y + (3  * tougle_front), digit_x + (3  * tougle_side)  ,digit_z,orientation)
 
 end
-
-
-
-
-   
-
-
-
+--end-----------------------------------------------------------------------------------
 
