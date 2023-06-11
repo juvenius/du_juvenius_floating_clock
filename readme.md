@@ -5,6 +5,8 @@
 
 This LUA Code ingame clock does not uses screens or signs to display time but a method of floating number stickers that change over time. With the Aid of a programing board you can put the clock on any construct.
 
+last update: june.10.2023
+
 ## How it works
 
 The clock activates when the Programing Board is activated, you can use a switch to turn it on and off or any element that can turn on and off the PB. The clock will apear floating and with the LUA Parameters you can change the orientation of the digits and do hour offsets for timezone needs. Just switch it on and off, nothing more to do.
@@ -64,5 +66,4 @@ switch -->Programing Board--> Core Unit
 ## Planded Upgrades
 
 - Stop Watch, Timer, Alarm functions
-- Rotate the digits on any direction
 - Local sunrise, sunset timer
